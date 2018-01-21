@@ -11,12 +11,12 @@ body {
 }
 
 h1 {
-    font-size: 3.0rem;
-    color: #015F7A;
+    font-size: 2.75rem;
+    color: #4cc9c9;
 }
 
 h2 {
-    font-size: 2.0rem;
+    font-size: 1.75rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
@@ -34,11 +34,11 @@ header, footer, footer a {
 }
 
 header img {
-    width: 200px;
+    width: 250px;
     height: auto;
     float: right;
 }
 
 footer {
-    font-size: .5em;
+    font-size: .8em;
 }
