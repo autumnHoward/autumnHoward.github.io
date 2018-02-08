@@ -1,0 +1,53 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+/* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box;}  
+
+/* Declare the base font-family - from google font api or other */
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Ubuntu|Yeseva+One');
+
+body {
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-size: 16px;
+}
+
+/* Declare the maximum width and other main element rules to limit the stretch on wide views */
+header, nav, main, footer { 
+    max-width: 80%;
+}
+
+header {
+    font-family: "Yeseva One", "Arial Black", serif;
+}
+header h1 {}
+header img {}
+header .subheading {}
+
+nav {}
+nav button {}
+nav ul {}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+section {}
+
+/* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article p.town-article img {  
+  width: 100%; /* fill the page in the small/phone view */
+  margin: 2em;
+}
+
+footer {}
+footer aside {}
+
+/* This structure refers to p elements that are direct children of the footer element */
+footer>p {} 
+
+/* Other Class Selectors */
