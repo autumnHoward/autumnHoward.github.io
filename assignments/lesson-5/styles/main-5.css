@@ -25,14 +25,16 @@ header {
 header h1 {
     font-family: "Yeseva One", "Arial Black", serif;
     display: inline;
-    font-size: 5em;
+    font-size: 4em;
 }
 header img {
     display: inline;
+    max-width: 200px;
+    min-width: 50px;
 }
 header .subheading {
-    display:inline;
-    font-size: 3em;
+    margin-left: 20%;    
+    font-size: 2em;
     font-family: "Ubuntu", "Arial", sans-serif;
 }
 
@@ -50,13 +52,25 @@ nav ul {
     overflow: hidden;
     background-color: #017792;
 }
-nav ul li {}
-nav ul li a {}
+nav ul li {
+    background-color: #017792;
+}
+nav ul li a {
+    font-size: 1.2em;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li a:hover {
+    background-color: #015C71;
+}
 
 main {}
-main h2 {font-family: "Yeseva One", "Arial Black", serif;}
+main h2 {
+    font-family: "Yeseva One", "Arial Black", serif;
+    font-size: 2em;
+}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
