@@ -18,6 +18,7 @@ body {
 header, nav, main, footer { 
     max-width: 940px;
     margin: auto;
+    text-align: center
 }
 
 header {
@@ -37,7 +38,7 @@ header .subheading {
     margin-left: 20%;    
     font-size: 2em;
     font-family: "Ubuntu", "Arial", sans-serif;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -60,7 +61,7 @@ nav ul li {
 nav ul li a {
     font-size: 1.2em;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 nav ul li.active a {}
@@ -85,13 +86,21 @@ section {}
 /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
 article p.town-article img {  
   width: 100%; /* fill the page in the small/phone view */
-  margin: 2em;
+  margin: 1em auto 1em auto;
 }
 
-footer {}
-footer aside {}
+footer {
+    background-color: #015C71;
+}
+footer aside {
+    background-color: #02AAD2;
+    text-align: center;
+}
 
 /* This structure refers to p elements that are direct children of the footer element */
-footer>p {} 
+footer>p {
+    color: white;
+    text-align: center;
+} 
 
 /* Other Class Selectors */
