@@ -14,17 +14,27 @@ body {
 /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 header, nav, main, footer { 
     max-width: 80%;
+    margin: auto;
 }
 
 header {
     font-family: "Yeseva One", "Arial Black", serif;
 }
-header h1 {}
+header h1 {
+    font-size: 4em;
+}
 header img {}
-header .subheading {}
+header .subheading {
+    font-size: 2em;
+}
 
-nav {}
-nav button {}
+nav {
+    background-color: #02AAD2;
+    color: white
+}
+nav button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 nav ul {}
 nav ul li {}
 nav ul li a {}
