@@ -16,11 +16,12 @@
 </head>
     
 <body>
-<div id="container">
   <header>
-    <img src="images/sitelogo.png" alt="Rain or Shine logo">
-    <h1>Rain or Shine</h1>
-    <div class="subheading">Your Weather Planning Tool</div>
+    <img id="site-logo" src="images/sitelogo.png" alt="Rain or Shine logo">
+    <hgroup>
+        <h1 class="site-name"><span class="blue-shadow">Rain</span> or <span class="orange-shadow">Shine</span></h1>
+        <div class="subheading">Your Weather Planning Tool</div>
+    </hgroup>
   </header>
 
   <!-- site navigation use placeholder references -->
@@ -105,13 +106,16 @@
     
   <footer>
     <aside>
-      Contact information placeholder
+        <p><span id="footer-title" class="site-name"> The Weather Site</span> <br>
+        123 Main St. <br>
+        Franklin, TX <br>
+        (915) 555-5555 <br>
+        hello@weather.com <br></p>
     </aside>
     <p class="footer-bar">&copy;2018 All Rights Reserved | Rain or Shine | <span id="currentdate">Current Date Placeholder</span></p>
   </footer>
 
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
-</div>
 </body>
 </html>

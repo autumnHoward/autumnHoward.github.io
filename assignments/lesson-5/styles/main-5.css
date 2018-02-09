@@ -9,42 +9,66 @@
 body {
     font-family: "Ubuntu", "Arial", sans-serif;
     font-size: 16px;
-}
-
-#container{
-    margin: 10px auto 10px auto;
-}
-/* Declare the maximum width and other main element rules to limit the stretch on wide views */
-header, nav, main, footer { 
+    margin: 20px auto 20px auto;
     max-width: 940px;
-    margin: auto;
     text-align: center
 }
 
 header {
+
 }
-header h1 {
-    font-family: "Yeseva One", "Arial Black", serif;
-    display: inline;
-    font-size: 4em;
-}
-header img {
-    display: inline;
+
+#site-logo { 
+    display: inline; 
+    float: left; 
     max-width: 200px;
-    min-width: 50px;
+    min-width: 200px;
+    margin-bottom: 10px;
 }
+
+.site-name{
+    font-family: "Yeseva One", "Arial Black", serif;
+    letter-spacing: .03em;
+}
+
+header h1 {
+    clear: none; 
+    display: inline; 
+    float: left; 
+    font-size: 3.5em;
+    margin-top: 40px;
+    margin-left: 10px; 
+    margin-bottom: 5px;
+}
+
+.blue-shadow{
+    text-shadow: 2px 2px #02AAD2;
+}
+
+.orange-shadow{
+    text-shadow: 2px 2px #FFB100;
+}
+
 header .subheading {
-    display: block;
-    margin-left: 20%;    
-    font-size: 2em;
+    color: #02AAD2;
+    font-size: 1.75em;
     font-family: "Ubuntu", "Arial", sans-serif;
-    margin-bottom: 20px;
+    clear: none; 
+    display: inline; 
+    float: left; 
+    margin-top: 0;
+    margin-left: 10px; 
+    margin-bottom: 15px;
 }
 
 nav {
+    clear: both; 
+    display: block; 
+    float: center; 
     background-color: #02AAD2;
-    color: white
+    color: white;
 }
+
 nav button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -55,13 +79,17 @@ nav ul {
     overflow: hidden;
     background-color: #017792;
 }
+
 nav ul li {
     background-color: #017792;
+    padding: 5px;
 }
+
 nav ul li a {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: white;
-    padding: 14px 20px;
+    padding-top: 15px;
+    padding-left: 50px;
     text-decoration: none;
 }
 nav ul li.active a {}
@@ -72,25 +100,44 @@ nav ul li a:hover {
 main {}
 main h2 {
     font-family: "Ubuntu", "Arial Black", serif;
-    font-size: 2.5em;
-}
-main h3 {
-    font-family: "Ubuntu", "Arial Black", serif;
     font-size: 2em;
 }
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
 
-section {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main picture img { 
+    width: 100%; 
+    clear: both;
+    margin-top: 10px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+article {
+    border: 1.5px solid #015C71;
+    display: block;
+    margin: 1em auto 0 auto;
+    overflow: auto;
+}
 
 /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-article p.town-article img {  
-  width: 100%; /* fill the page in the small/phone view */
-  margin: 1em auto 1em auto;
+article p.town-article img {   
+    width: 100%; /* fill the page in the small/phone view */
+    margin: 1em auto 1em auto;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
 }
 
 footer {
     background-color: #015C71;
+    clear: both;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-bottom-left: 15px;
+    -webkit-border-radius-bottom-left: 15px;
+    border-bottom-right-radius: 15px;
+    -moz-border-radius-bottom-right: 15px;
+    -webkit-border-radius-bottom-right: 15px;
 }
 footer aside {
     background-color: #02AAD2;
@@ -98,9 +145,19 @@ footer aside {
 }
 
 /* This structure refers to p elements that are direct children of the footer element */
-footer>p {
+footer p {
     color: white;
     text-align: center;
+    padding: 15px;
+    padding-bottom: 20px;
 } 
 
+#footer-title{
+    font-size: 1.2em;
+}
+
 /* Other Class Selectors */
+
+.forecast{
+    margin-bottom: 10px;
+}
