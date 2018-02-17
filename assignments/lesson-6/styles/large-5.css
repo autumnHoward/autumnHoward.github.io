@@ -12,6 +12,7 @@
     }
     
     main figure.responsive { 
+        width: 100%; 
     }
   
 }
