@@ -10,7 +10,8 @@
   
 /* responsive images */
  main figure.responsive { 
-    width: 75%; }
+    width: 75%; 
+    }
     
 /*horizontal menu bar*/
     ul {

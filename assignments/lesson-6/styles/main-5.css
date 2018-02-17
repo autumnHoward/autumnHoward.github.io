@@ -107,7 +107,11 @@ main h2 {
 }
 
 main figure.responsive { 
-    width: 50%; }
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 main figure.responsive img { 
     width: 100%;
