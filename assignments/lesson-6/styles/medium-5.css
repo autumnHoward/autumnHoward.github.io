@@ -9,11 +9,9 @@
   section.forecast { display: ???; }  
   
 /* responsive images */
-  article p.town-article img { 
-      width: 55%; 
-      float: right; 
-      margin: 0 1em 1em 1em;
-    }  
+ main figure.responsive { 
+    margin: 0 0 .2rem 2%; 
+    width: 75%; }
     
 /*horizontal menu bar*/
     ul {
