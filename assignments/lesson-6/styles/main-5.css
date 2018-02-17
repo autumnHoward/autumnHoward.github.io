@@ -4,10 +4,11 @@
 * { box-sizing: border-box;}  
 
 /* Declare the base font-family - from google font api or other */
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Ubuntu|Yeseva+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Ubuntu", "Arial", sans-serif;
     font-size: 16px;
     margin: 20px auto 20px auto;
     max-width: 1000px;
@@ -21,9 +22,9 @@ header {
 #site-logo { 
     display: inline; 
     float: left; 
-    max-width: 200px;
-    min-width: 200px;
-    margin-bottom: 10px;
+    max-width: 100%;
+    min-width: 30%;
+    margin-bottom: 1em;
 }
 
 .site-name{
@@ -52,7 +53,7 @@ header h1 {
 header .subheading {
     color: #02AAD2;
     font-size: 1.75em;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Ubuntu", "Arial", sans-serif;
     clear: none; 
     display: inline; 
     float: left; 
