@@ -10,5 +10,9 @@
         padding-top: 15px;
         padding-left: 50px;
     }
+    
+    main figure.responsive { 
+    margin: 0 0 .2rem 2%; 
+    width: 100%; }
   
 }
