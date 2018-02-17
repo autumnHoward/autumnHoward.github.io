@@ -4,8 +4,8 @@
 * { box-sizing: border-box;}  
 
 /* Declare the base font-family - from google font api or other */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Ubuntu|Yeseva+One');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
     font-family: "Ubuntu", "Arial", sans-serif;
@@ -28,14 +28,13 @@ header {
 }
 
 .site-name{
-    font-family: "Montserrat", "Arial Black", serif;
+    font-family: "Comfortaa", "Helvetica", sans-serif;
     letter-spacing: .03em;
 }
 
 header h1 {
     clear: none; 
     display: inline; 
-    float: left; 
     font-size: 3.5em;
     margin-top: 40px;
     margin-left: 10px; 
