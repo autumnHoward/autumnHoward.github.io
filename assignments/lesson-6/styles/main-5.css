@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-header hgroup{
+header {
     overflow: auto;
 }
 
@@ -49,7 +49,7 @@ h1.site-name {
     text-shadow: 2px 2px #FFB100;
 }
 
-header .subheading {
+.subheading {
     color: #02AAD2;
     font-size: 1.2em;
     font-family: "Ubuntu", "Arial", sans-serif;
