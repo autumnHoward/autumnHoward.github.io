@@ -33,7 +33,7 @@ header {
 }
 
 header h1 {
-    clear: none; 
+    clear: right; 
     display: inline; 
     font-size: 2em;
     margin-top: 40px;
@@ -97,13 +97,8 @@ nav ul li a:hover {
     background-color: #015C71;
 }
 
-main h1{
+main h1, h2, h2{
     font-family: "Comfortaa", "Helvetica", serif;
-}
-
-main h2 {
-    font-family: "Comfortaa", "Helvetica", serif;
-    font-size: 2em;
 }
 
 main figure.responsive { 
