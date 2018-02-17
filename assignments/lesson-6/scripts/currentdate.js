@@ -30,4 +30,6 @@ var m = month[n.getMonth()];
 var y = n.getFullYear();
 var d = n.getDate();
 
-document.getElementById("currentdate").innerHTML = w + ", " + d + " " + m + " " + y;
+var output = w + ", " + d + " " + m + " " + y;
+
+document.getElementById("currentdate").innerHTML = output;
