@@ -16,7 +16,7 @@ body {
 }
 
 header {
-
+    overflow: auto;
 }
 
 #site-logo { 
@@ -113,9 +113,9 @@ main figure.responsive img {
     width: 100%;
     clear: both;
     margin-top: 10px;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 article {
@@ -129,9 +129,9 @@ article {
 article p.town-article img {   
     max-width: 100%; /* fill the page in the small/phone view */
     margin: 1em auto 1em auto;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 footer {
