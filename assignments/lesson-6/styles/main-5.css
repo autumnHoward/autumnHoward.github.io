@@ -23,7 +23,7 @@ header {
     display: inline; 
     float: left; 
     max-width: 100%;
-    min-width: 30%;
+    min-width: 15%;
     margin-bottom: 1em;
 }
 
@@ -98,11 +98,11 @@ nav ul li a:hover {
 }
 
 main h1{
-    font-family: "Montserrat", "Arial Black", serif;
+    font-family: "Comfortaa", "Helvetica", serif;
 }
 
 main h2 {
-    font-family: "Montserrat", "Arial Black", serif;
+    font-family: "Comfortaa", "Helvetica", serif;
     font-size: 2em;
 }
 
@@ -131,7 +131,7 @@ article {
 
 /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
 article p.town-article img {   
-    width: 100%; /* fill the page in the small/phone view */
+    max-width: 100%; /* fill the page in the small/phone view */
     margin: 1em auto 1em auto;
     border-radius: 15px;
     -moz-border-radius: 15px;
