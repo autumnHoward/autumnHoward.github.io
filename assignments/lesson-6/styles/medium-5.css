@@ -55,6 +55,7 @@
     
     article p.town-article img {   
         max-width: 75%;
+        float: right;
     }
     
     header h1 {
