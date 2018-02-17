@@ -41,9 +41,9 @@
     }
     
     nav ul li a {
-    font-size: 1.1em;
-    padding-top: 10px;
-    padding-left: 18px;
+        font-size: 1.1em;
+        padding-top: 10px;
+        padding-left: 18px;
     }
     
     
@@ -52,9 +52,7 @@
         padding-left: 1em;
         text-align: left;
     }
-
-/* Change the link color to a darker blue on hover */
-    li a:hover {
-    }
-
+    
+    header h1 {
+        font-size: 2.5em;
 }

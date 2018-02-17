@@ -14,5 +14,9 @@
     main figure.responsive { 
         width: 100%; 
     }
+    
+    header h1{
+        font-size: 3.5em;
+    }
   
 }
