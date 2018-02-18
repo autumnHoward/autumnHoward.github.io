@@ -33,12 +33,12 @@ header {
 }
 
 h1.site-name {
-    display: inline; 
-    float: left;
     font-size: 2em;
-    margin-top: 40px;
-    margin-left: 10px; 
-    margin-bottom: 5px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 130px; 
+    margin-bottom: 0;
+    padding-bottom: .1em;
 }
 
 .blue-shadow{
@@ -49,16 +49,13 @@ h1.site-name {
     text-shadow: 2px 2px #FFB100;
 }
 
-.subheading {
+#subheading {
     color: #02AAD2;
     font-size: 1.2em;
     font-family: "Ubuntu", "Arial", sans-serif;
-    display: inline; 
-    clear: left;
-    float: left; 
+    text-align: left;
     margin-top: 0;
-    margin-left: 10px; 
-    margin-bottom: 15px;
+    margin-left: 130px; 
 }
 
 nav {
@@ -69,9 +66,16 @@ nav {
     color: white;
 }
 
-nav button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+nav button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 1.6rem;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -80,19 +84,28 @@ nav ul {
     background-color: #017792;
 }
 
+nav ul.hide {
+    display: none;
+}
+
 nav ul li {
     background-color: #017792;
-    padding: 5px;
+
 }
 
 nav ul li a {
+    display: block;
     font-size: 1.1em;
     color: white;
-    padding-top: 15px;
-    padding-left: 50px;
     text-decoration: none;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0,0,0,0.3);
+
 }
-nav ul li.active a {}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+}
+
 nav ul li a:hover {
     background-color: #015C71;
 }
@@ -164,4 +177,11 @@ footer p {
 
 .forecast{
     margin-bottom: 10px;
+}
+
+/* Clearfix to keep elements from collapsing*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
