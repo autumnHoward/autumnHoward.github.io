@@ -137,6 +137,7 @@ main figure.responsive img {
 
 figcaption{
     font-size: .75em;
+    padding: 5px;
 }
 
 article {
