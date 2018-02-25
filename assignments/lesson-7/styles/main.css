@@ -137,7 +137,7 @@ main figure.responsive img {
 
 figcaption{
     font-size: .75em;
-    padding: 5px;
+    padding: 10px;
 }
 
 article {
@@ -165,6 +165,10 @@ display: grid;
 grid-template-columns: 300px;
 width: 300px;
 margin: 0 auto;
+}
+
+.grid figure{
+padding: 10px;
 }
 
 .hover-shadow{
