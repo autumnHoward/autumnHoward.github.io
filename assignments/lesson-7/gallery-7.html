@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -14,11 +13,11 @@
     <!-- normalize useragent/browser defaults -->
     <link href="styles/normalize.css" rel="stylesheet"> 
     <!-- default styles - small/phone views -->
-    <link href="styles/main-5.css" rel="stylesheet">    
+    <link href="styles/main.css" rel="stylesheet">    
     <!-- medium/tablet views -->
-    <link href="styles/medium-5.css" rel="stylesheet">  
+    <link href="styles/medium.css" rel="stylesheet">  
     <!-- large/wide/desktop views -->
-    <link href="styles/large-5.css" rel="stylesheet">    
+    <link href="styles/large.css" rel="stylesheet">    
 
 </head>
     
@@ -46,37 +45,37 @@
     
   <main>
       <h2>The Gallery</h2>
-    
-      <figure class="responsive">
-          <img src="images/gallery-field.jpg" alt="Clear sky over a field">
+    <div class="grid">
+      <figure class="responsive hover-shadow">
+          <img class="gallery-picture" src="images/gallery-field.jpg" alt="Clear sky over a field">
           <figcaption>Franklin enjoys clear, sunny skies almost year-round.</figcaption>
       </figure>
       
-      <figure class="responsive">
-          <img src="images/gallery-sun.jpg" alt="Bright sunset">
+      <figure class="responsive hover-shadow">
+          <img class="gallery-picture" src="images/gallery-sun.jpg" alt="Bright sunset">
           <figcaption>A warm sunset over Franklin.</figcaption>
       </figure>
       
-      <figure class="responsive">
-          <img src="images/gallery-sky.jpg" alt="Cloudy sky">
+      <figure class="responsive hover-shadow">
+          <img class="gallery-picture" src="images/gallery-sky.jpg" alt="Cloudy sky">
           <figcaption>Fluffy cumulus clouds over Greenville.</figcaption>
       </figure>
       
-      <figure class="responsive">
-          <img src="images/gallery-sea.jpg" alt="Boat in a storm">
+      <figure class="responsive hover-shadow">
+          <img class="gallery-picture" src="images/gallery-sea.jpg" alt="Boat in a storm">
           <figcaption>Waves break during a storm off the Greenville coast. </figcaption>
       </figure>
       
-      <figure class="responsive">
-          <img src="images/gallery-night.jpg" alt="Starry sunset">
-          <figcaption>The last bit of daytime fades away. </figcaption>
+      <figure class="responsive hover-shadow">
+          <img class="gallery-picture" src="images/gallery-night.jpg" alt="Starry sunset">
+          <figcaption>The last daylight fades away over Springfield. </figcaption>
       </figure>
       
-      <figure class="responsive">
-          <img src="images/gallery-road.jpg" alt="Highway to Springfield">
+      <figure class="responsive hover-shadow">
+          <img class="gallery-picture" src="images/gallery-road.jpg" alt="Highway to Springfield">
           <figcaption>The road from Franklin to Springfield.</figcaption>
       </figure>
-      
+      </div>
         
   </main>
     
@@ -95,3 +94,6 @@
     <script src="scripts/currentdate.js"></script>
 </body>
 </html>
+
+
+

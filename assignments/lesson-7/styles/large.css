@@ -17,5 +17,12 @@
     header h1{
         font-size: 3.5em;
     }
+    
+    .grid{
+    grid-template-columns: 300px 300px 300px;
+	width: 930px;
+    }
   
 }
+
+

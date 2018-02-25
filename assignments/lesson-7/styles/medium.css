@@ -62,4 +62,18 @@
     article p img {   
         margin: 0;
     }
-    
+
+/* 2 column grid layout for gallery*/
+
+.grid{
+display: grid;
+grid-template-columns: 325px 325px;
+grid-column-gap: 15px;
+width: 665px;
+margin: 0 auto;
+}
+
+.grid figure{
+padding: 10px;
+}
+
