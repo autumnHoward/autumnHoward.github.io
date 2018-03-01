@@ -1,0 +1,53 @@
+table{
+    font-family: "Ubuntu", sans-serif;
+    width: 330px;
+/*center table in the browser window*/
+    margin: 2em auto;
+    table-layout: fixed;
+/*give borders single-line look*/
+    border-collapse: collapse;
+    border: 2px solid #DBE7DF;
+/*box shadow*/
+    box-shadow: 5px 10px 8px #628ca6;
+}
+
+th, td{
+    padding: 8px;
+    border: 2px solid #DBE7DF;
+    text-align: center;
+}
+
+th {
+    background-color: #7fb9c2;
+}
+
+.highlight{
+    color: white;
+    background-color: #628ca6;
+}
+
+.title{
+    font-size: 1.7em;
+}
+
+.blue1{
+    background-color: #e7f0ed;
+}
+
+.blue2{
+    background-color: #e7ffed;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.credit-text{
+    font-weight: normal;
+    font-size: .75em;
+}
