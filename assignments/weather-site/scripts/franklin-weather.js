@@ -3,8 +3,8 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
 request.send();
 
-request.onload = function(){
-    var weatherInfo = JSON.parse(request.responseText)
+request.onload = function () {
+    var weatherInfo = JSON.parse(request.responseText);
     console.log(weatherInfo);
     
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.full;
