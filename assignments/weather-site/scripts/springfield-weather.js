@@ -1,4 +1,4 @@
-var requestURL = 'http://api.wunderground.com/api/c68b3124bacf9ecd/conditions/q/TN/Springfield.json';
+var requestURL = 'https://api.wunderground.com/api/c68b3124bacf9ecd/conditions/q/TN/Springfield.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
 request.send();
