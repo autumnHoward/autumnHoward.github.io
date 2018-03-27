@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Menu</title>
+	<link rel="stylesheet" href="css/animatedMenu.css">
+	    <!--for CDN access of jQuery-->
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script>
+	$(function(){
+		// All jQuery code goes here
+        $('.navigation > li').hover(function(){
+            //when mouse hovers over list items
+            $(this).addClass('openSesame');
+            
+        }, function(){
+            //when mouse is not over list items
+            $(this).removeClass('openSesame');
+        })
+
+	})
+	</script>
+</head>
+<body>
+	<ul class="navigation">
+		<li>About Us</li>
+		<li>Services</li>
+		<li>Catalog</li>
+		<li>Blog</li>
+		<li>Contact</li>
+	</ul>
+</body>
+</html>
