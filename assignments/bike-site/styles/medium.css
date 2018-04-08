@@ -1,0 +1,149 @@
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+@media only screen and (min-width: 37.5em) {
+    
+    body, html {
+        height: 100%;
+    }
+
+/* hide hamburger button*/
+    nav button { 
+        display: none; 
+    }  
+    
+/*override hide class from smaller menu size*/
+    .hide{
+        display: block;
+    }
+    
+    .nav-logo{
+        margin: 0 auto;
+        width: 150px;
+    }
+    
+    nav {
+        display: none;
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #012254;
+        overflow-x: hidden;
+        padding-top: 60px;
+    }
+    
+    .nav-spacer{
+        width: 100%;
+        height: 200px;
+    }
+
+    nav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+    
+    nav ul li {
+        background-color: transparent;
+    }
+    
+    .full-img { 
+        /* The image used */
+        background-image: url("montana.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+/*hide footer in larger views*/
+    div.footer{
+        display: none;
+    }
+
+/* show the 10-day forecast with the medium view and up*/
+    section.forecast {
+        display: block;
+    }
+    table{
+        display: inline-block;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+    
+    table th, table td{
+        border: 1px solid #ddd;
+        padding: .5em;
+    }
+    
+    table th{
+        color: #017792;
+    }
+
+    section.summary { 
+        display: flex; 
+        justify-content: space-around;
+    }  
+    section div{
+        flex: 1;
+    }
+
+    div p{
+        margin: 0;
+        padding-bottom: .8em;
+    }
+    
+    #article-content{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    article p{
+        padding: 0;
+        flex: 1;
+        margin: 0;
+    }
+    
+    article p img {   
+        max-width: 85%;
+        margin: 0;
+        text-align: right;
+    }
+
+/* 2 column grid layout for gallery*/
+
+    .grid{
+        display: grid;
+        grid-template-columns: 325px 325px;
+        grid-column-gap: 15px;
+        width: 665px;
+        margin: 0 auto;
+    }
+
+    #row-one{
+        display: flex;
+    }
+    
+    .story-column{
+        flex: 1;
+        padding: .5em;
+    }
+    
+   #town-boxes{
+        display: flex;
+    }
+    
+    .town-column{
+        flex: 1;
+        margin: 0 .5em;
+    }
+
+}

@@ -1,0 +1,184 @@
+/* Default rules; geared toward the small/phone view */
+
+/* Declare the base font-family - from google font api or other */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Trade+Winds');
+@import url('https://fonts.googleapis.com/css?family=Miniver');
+
+/* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box;}  
+
+body {
+    font-family: "Open Sans", "Verdana", "Arial", sans-serif;
+    font-size: 16px;
+    margin: 20px auto 20px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oswald", "Helvetica", sans-serif;
+}
+
+nav {
+    background-color: transparent;
+    color: white;
+}
+
+nav button{
+    background-color: #012254;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 1.6rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.hide {
+    display: none;
+}
+
+nav ul li {
+    background-color: #012254;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0,0,0,0.3);
+
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav ul li a:hover {
+    background-color: #B67045;
+    font-size: 1.25em;
+    color: #012254;
+}
+
+nav ul li a:active {
+    color: #ffffff;
+}
+
+a.active{
+    background-color: #7499C1;
+}
+
+.site-name{
+    font-family: "Trade Winds", "Miniver", "Arial Black", sans-serif;
+}
+
+#footer-name{
+    font-family: "Trade Winds", "Miniver", "Arial Black", sans-serif;
+    font-size: 1.2em;
+}
+
+main figure.responsive { 
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main figure.responsive img { 
+    max-width: 100%;
+    min-width: 50%;
+    margin-top: 0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+figcaption{
+    font-size: .75em;
+    padding: 10px;
+}
+
+section{
+    margin: 0;
+    padding: .5em;
+}
+
+section.forecast {
+     display: none;
+}
+
+article {
+    border: 1.5px solid #015C71;
+    overflow: auto;
+    padding: .75em;
+}
+
+h3.article-title{
+    margin-top: .25em;
+}
+
+article p.text{
+    text-align: left;
+    margin: 0;
+}
+
+article h3{
+    margin: 1em auto 1em auto;
+}
+
+article img {   
+    max-width: 100%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 0;
+}
+
+.grid{
+display: grid;
+grid-template-columns: 300px;
+width: 300px;
+margin: 0 auto;
+}
+
+.grid figure{
+padding: 10px;
+}
+
+.hover-shadow{
+	box-shadow: 5px 10px 18px #888888;
+}
+
+/* traditional footer only appears in small/mobile views */
+div.footer {
+    background-color: #012254;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
+div.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+div.footer a:hover{
+    color: #FFB100;
+}
+
+div.footer a:active{
+    color: #015C71;
+}
+
+
+.forecast{
+    margin-bottom: 10px;
+}
