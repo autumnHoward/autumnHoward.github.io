@@ -7,30 +7,40 @@
 /* This wildcard applies to all elements ensuring a box layout model */
 * { box-sizing: border-box;}  
 
+/*** main text styles ****/
+
 body {
     font-family: "Open Sans", "Verdana", "Arial", sans-serif;
     font-size: 16px;
-    margin: 20px auto 20px auto;
-    max-width: 1000px;
-    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: "Oswald", "Helvetica", sans-serif;
 }
 
+.site-name{
+    font-size: 3em;
+    line-height: .8em; 
+    text-align: center;
+    color: white;
+    font-family: "Trade Winds", "Miniver", "Arial Black", sans-serif;
+    text-shadow: 5px 5px 15px #001610;
+}
+
+/*** navigation styles; side nav for larger views and hamburger button for mobile views ****/
+
 nav {
+    text-align: center;
     background-color: transparent;
     color: white;
 }
 
 nav button{
     background-color: #012254;
+    width: 100%;
     border: none;
     color: white;
     padding: 10px;
-    margin-top: 3px;
-    margin-bottom: 3px;
     font-size: 1.6rem;
 }
 
@@ -63,9 +73,8 @@ nav ul li.active a {
 }
 
 nav ul li a:hover {
-    background-color: #B67045;
+    background-color: #b67045;
     font-size: 1.25em;
-    color: #012254;
 }
 
 nav ul li a:active {
@@ -73,17 +82,79 @@ nav ul li a:active {
 }
 
 a.active{
-    background-color: #7499C1;
+    background-color: #001636;
 }
 
-.site-name{
-    font-family: "Trade Winds", "Miniver", "Arial Black", sans-serif;
+/*** button styles ****/
+
+.button {
+    background-color: #b67045;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover{
+    background-color: #E0A17A;
+}
+
+a.small-link{
+    color: #7499C1;
+    font-size: 9pt;
+}
+
+a.small-link:hover{
+    color: #012254;
+}
+
+/*** box on home page ****/
+#ad-box{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 0 auto;
+    width: 350px;
+}
+
+/*** bottom footer only appears in small/mobile views ****/
+div.footer {
+    background-color: #012254;
+    color: #ffffff;
+    font-size: 10pt;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+} 
+
+div.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+div.footer a:hover{
+    color: #FFB100;
+}
+
+div.footer a:active{
+    color: #015C71;
 }
 
 #footer-name{
     font-family: "Trade Winds", "Miniver", "Arial Black", sans-serif;
     font-size: 1.2em;
 }
+
+/*************************************************************/
+/*************************************************************/
+/************************************************************
+
 
 main figure.responsive { 
     width: 100%; 
@@ -105,42 +176,6 @@ figcaption{
     padding: 10px;
 }
 
-section{
-    margin: 0;
-    padding: .5em;
-}
-
-section.forecast {
-     display: none;
-}
-
-article {
-    border: 1.5px solid #015C71;
-    overflow: auto;
-    padding: .75em;
-}
-
-h3.article-title{
-    margin-top: .25em;
-}
-
-article p.text{
-    text-align: left;
-    margin: 0;
-}
-
-article h3{
-    margin: 1em auto 1em auto;
-}
-
-article img {   
-    max-width: 100%;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    margin: 0;
-}
-
 .grid{
 display: grid;
 grid-template-columns: 300px;
@@ -155,30 +190,7 @@ padding: 10px;
 .hover-shadow{
 	box-shadow: 5px 10px 18px #888888;
 }
-
-/* traditional footer only appears in small/mobile views */
-div.footer {
-    background-color: #012254;
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-} 
-
-div.footer a{
-    color: white;
-    text-decoration: none;
-}
-
-div.footer a:hover{
-    color: #FFB100;
-}
-
-div.footer a:active{
-    color: #015C71;
-}
+*/
+/*************************************************************/
 
 
-.forecast{
-    margin-bottom: 10px;
-}
