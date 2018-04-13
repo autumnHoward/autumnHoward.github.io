@@ -3,7 +3,7 @@
     
     
     h1.site-name{
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: .8em; 
     }
 
@@ -13,13 +13,41 @@
         width: 300px;
     }
     
-    .nav-spacer{
-        height: 200px;
+/*** ensure nav menu doesn't overlap main page content ****/
+    #side-menu-box{
+        width: 300px;
     }
     
+/*** two column layout on larger screens ****/
+    #container{
+        display: flex;
+        flex: 1;
+    }
+    
+    .col{
+        padding: 0 1.5em;
+        margin: 0;
+        width: 100%;
+    }
+    
+    form{
+        margin: 1em 0;
+    }
+    
+/*** 3 column grid layout for sales page ***/
+
+    .grid{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-column-gap: 15px;
+        width: 930px;
+        margin: 0 auto;
+    }
+   
 /*** footer appears at base of side nav in medium/large views ****/
-    p.side-footer {
+    #side-footer {
         font-size: 10pt;
+        width: 300px;
     } 
     
 /*
