@@ -34,6 +34,11 @@
         margin: 1em 0;
     }
     
+/*** video styles ****/
+    video{
+        width: 800px;
+    }
+    
 /*** 3 column grid layout for sales page ***/
 
     .grid{

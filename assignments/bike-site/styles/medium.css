@@ -97,6 +97,11 @@
         width: 400px;
     }
     
+/*** video styles ****/
+video{
+    width: 500px;
+}
+    
 /*** 3 column grid layout ***/
     .grid{
         display: grid;

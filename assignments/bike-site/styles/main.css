@@ -120,8 +120,12 @@ main p{
     max-width: 800px;
 }
 
-/*** button and link styles ****/
+/*** video styles ****/
+video{
+    width: 300px;
+}
 
+/*** button and link styles ****/
 .button {
     background-color: #b67045;
     border: none;
