@@ -1,0 +1,56 @@
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+@media only screen and (min-width: 37.5em) {
+    
+    #site-logo { 
+        width: 100px;
+        height: 98px;
+    }
+    
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    h1.site-name {
+        font-size: 3em;
+    }
+    
+    nav{
+        /*background-color: #454545;
+        border-bottom: 5px solid #B7B7B7;*/
+    }
+    
+/* hide hamburger button*/
+    nav button { 
+        display: none; 
+    }  
+    
+/*horizontal menu bar*/
+    nav ul {
+        margin: 0;
+    }
+    
+/*override hide class from smaller menu size*/
+    nav ul.hide{
+        display: block;
+    }
+
+    nav ul li {
+        float: right;
+        margin-right: 20px;
+        background-color: transparent;
+    }
+
+    nav ul li a {
+        border: none;
+        font-size: 1em;
+        text-align: center;
+        padding: .8rem 1rem;
+    }
+    
+    footer{
+        clear: both;
+    }
+    
+    
+}

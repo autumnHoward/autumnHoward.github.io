@@ -1,0 +1,54 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    #site-logo { 
+    width: 120px;
+    height: 117px;
+    }
+    
+    .text-block{
+        top: 70px;
+    }
+    
+    h1.bigger{
+        font-size: 5em;
+        text-shadow: 2px 2px 4px #ffffff;
+    }
+    
+    h1.page-title{
+        font-size: 3em;
+    }
+    
+    nav ul li a {
+        padding: .6rem 1rem
+    }
+    
+    main img.responsive { 
+        max-width: 100%; 
+    }
+    
+    #profile-pic{
+        width: 500px;
+    }
+    
+    p.transparent-box{
+        max-width: 70%;
+        margin-left: 50px;
+        margin-bottom: 80px;
+    }
+    
+    div.page-pic{
+        padding-top: 0;
+    }
+  
+/***********************************************************
+***************** grid styling (Gallery page) **************
+************************************************************/
+    .grid{
+        grid-template-columns: 400px 400px 400px;
+        width: 1230px;
+    }
+  
+}
+
+

@@ -1,0 +1,72 @@
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+@media only screen and (min-width: 37.5em) {
+    
+    .bigger{
+        font-size: 3.5em;
+        /*display: inline;
+        float: left;*/
+    }
+    
+    .picture-box{
+        position: relative;
+        overflow: auto;
+    }
+
+    .text-block {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        width: 60%;
+        line-height: 1.5em;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow: scroll;
+    }
+    
+    .text-block h1{
+        line-height: 1em;
+        margin: 0;
+        padding: 0;
+    }
+    
+   .row { 
+        max-width: 1250px;
+        display: flex; 
+        justify-content: space-between; 
+    }
+    
+    .picture-box{
+        flex: 1;
+    }
+    .brand-col{
+        justify-content: space-around;
+        flex: 1;
+    }
+    
+        #profile-pic{
+        float: right;
+        width: 300px;
+        overflow: auto;
+        padding: .75em;
+    }
+    
+/***********************************************************
+***************** grid styling (Gallery page) **************
+************************************************************/
+    
+    
+/* 2 column grid layout for gallery*/
+
+    .grid{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-column-gap: 15px;
+        width: 815px;
+        margin: 0 auto;
+    }
+
+}

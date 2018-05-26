@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link href="styles/main-header-footer.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/large-header-footer.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/medium.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/large.css" type="text/css" rel="stylesheet"/>
+    <title>Contact Me | Autumn Howard Design</title>
+</head>
+<body>
+<header>
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul  id="primaryNav" class="hide">
+            <li><a href="https://autumndesignswithcolors.wordpress.com/blog/" target="_blank">Blog</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+  <main>
+    <div class="spacer"></div>  
+    <h1 class="page-title">Contact</h1>
+    
+      <p>You can send me questions or comments through this form, or through <a href="mailto:autumn.howard.designs@gmail.com">my email</a>.</p>
+
+      <form action="" method="post" encrypt="multipart/form-data" name="contactInfo" id="contact-form">
+    
+    <fieldset>
+        <legend><span>Personal Information</span></legend>
+        <label><span>* Name:</span><input name="fullname" size="35" type="text" value="" placeholder="John Storm" pattern="[a-zA-Z -._]{5,99}" required></label>
+        <label><span>* Email:</span><input name="email" size="35" type="email" value="" placeholder="john@example.com"></label>
+        <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="1235551234" pattern="[0-9]{10,20}"></label>
+        <label><span>Questions or Comments:</span><textarea rows="7" cols="50" name="comment" placeholder="Questions or Comments..."></textarea></label>
+	</fieldset>
+	
+    <div id="button-box">
+    <input type="hidden" name="redirect" value="thanks.html">
+	<input type="submit" value="Submit" class="submitBtn" 
+    onclick="window.location='thanks.html'">
+    </div>
+          
+</form>
+  
+  </main>
+    
+<footer>
+        <p><a href="styleguide/styleguide.html" target="_blank">Style Guide</a> | <a href="styleguide/site-layout-document.psd" download>Photoshop Design File</a><br>
+        All content 2018 &copy; <a id="footer-link" href="index.html">Autumn Howard</a><br> Salt Lake City, UT | <a href="mailto:autumn.howard.designs@gmail.com">autumn.howard.designs@gmail.com</a></p>
+</footer>
+    
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    
+</body>
+</html>

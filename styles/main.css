@@ -1,44 +1,228 @@
-/* CIT 230 - Assignment Portal CSS */
+/***********************************************************
+**************default styles designed for mobile ***********
+************************************************************/
 
-/* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; } 
+/* Declare the base font-family - from google font api or other */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
-body { 
-    font-size: 16px; 
-    line-height: 32px;
-    font-family:  Helvetica, sans-serif;
-    color: #000000;
+/* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box;}  
+
+/*This overrides the default browser behavior, allowing elements to touch the edges of the browser window.*/
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+header{
+    position: fixed;
+    margin-top: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 10;
 }
 
-h1 {
-    font-size: 2.75rem;
-    color: #FFBA30;
+body {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
 }
 
-h2 {
-    font-size: 1.75rem;
+main{
+    max-width: 1250px;
+    margin: 0 auto 20px auto;
     text-align: center;
-    border-bottom: 1px solid #bbb;
 }
 
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 800px;
+div.spacer{
+    height: 45px;
 }
 
-header, footer, footer a {
+h1.page-title{
+    font-size: 2.5em;
+}
+
+#greeting{
+    font-family: "Permanent Marker", "Oswald", fantasy;
+    font-size: 1.8em;
+    letter-spacing: .04em;
+}
+
+#transparent-box{
+    margin: 0 auto 80px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.4em;
+    width: 80%;
+    min-height: 50px;
+    padding: 20px;
+    margin-bottom: 80px;
+    background-color: rgba(0, 150, 77, 0.4);
+}
+
+h1, h2, h2, h3, h4, h5, h6, .site-name{
+    font-family: "Permanent Marker", "Oswald", fantasy;
+    letter-spacing: .04em;
+    color: #4DC9A7;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+.text-block{
+    display: block;
+    margin: auto;
     text-align: center;
-    background-color: black;
-    color: whitesmoke;
+    padding: 10px;
 }
 
-header img {
-    width: 250px;
-    height: auto;
-    float: right;
+div.page-pic{
+    background-color: white;
+    padding-top: 20px;
+    max-width: 400px;
+    min-width: 150px;
+    margin: 1em auto;
+    
 }
 
-footer {
-    font-size: .8em;
+.shadow{
+    box-shadow: 5px 10px 8px #454545;
 }
+
+p{
+    padding: .75em;
+}
+
+img.responsive{ 
+    max-width: 80%;
+    min-width: 60%;
+    margin: 0;
+}
+
+img.screenshot{
+    max-width: 100px;
+    margin: 1em;
+}
+
+#profile-pic{
+    width: 300px;
+    margin: 0;
+}
+
+section{
+    margin: 0;
+    padding: .5em;
+}
+
+p.para {
+    max-width: 900px;
+    margin: auto;
+    padding: .75em;
+}
+
+p.leftie {
+    text-align: left;
+}
+
+main a{
+    color: #b7b7b7;
+    text-decoration: none;
+}
+
+main a:hover{
+    color: #F15F72;
+}
+
+/***********************************************************
+***************** form styling (Contact page) **************
+************************************************************/
+
+form#contact-form{
+    margin:  1em auto;
+    text-align: left;
+}
+
+fieldset{
+    background-color: #b4b4b4;
+    border-radius: .5em;
+    margin: 1.5em auto;
+    border: 2px solid #b7b7b7;
+    max-width: 500px;
+    padding-left: 1em;
+}
+
+legend{
+    color: white;
+    text-align:left;
+    border: 2px solid #b7b7b7;
+    background-color: #4DC9A7;
+    border-radius: .4em;
+    padding: .5em;
+}
+
+label{
+/*input elements are inline by default*/
+    display: block;
+    margin: .5em;
+}
+
+/*to put input fields under instructions/labels and improve visual grouping*/
+label span {
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    color: #ffffff;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input, textarea{
+    padding: .5em;
+    background-color: white;
+}
+
+input.submitBtn{
+    /*override web kit on some mobile devices*/
+    -webkit-appearance: none;
+    color: #fff;
+    width: 40%;
+    display: block;
+    margin: 1em auto 1.5em;
+    font-size: 1.2em;
+    padding: .6em;
+    background: #4DC9A7; /*for old browsers*/
+    box-shadow: 5px 10px 8px #454545;
+}
+
+input.submitBtn:hover{
+    background-color: #F15F72;
+}
+
+/***********************************************************
+***************** grid styling (Gallery page) **************
+************************************************************/
+
+.grid{
+    display: grid;
+    grid-template-columns: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.grid figure{
+    padding: 10px;
+    margin: 0;
+    width: 400px;
+    overflow: auto;
+}
+
+.hover-shadow{
+	box-shadow: 5px 10px 18px #888888;
+}
+

@@ -1,35 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CIT 230 Assignment Portal | Autumn Howard | BYU-Idaho</title></head>
-<meta name="description" content="Assignment portal page for Autumn Howard in CIT 230: Web Frontend Development at BYU-Idaho.">
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/main.css">
+    <meta charset="utf-8"/>
+    <!-- favicon image (shows on tab)-->
+    <link rel="icon" href="/images-home/favicon.png">
+    <!-- multiple stylesheets to control styles using media queries; 
+        handle various screen sizes-->
+    <link href="styles/main-header-footer.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/large-header-footer.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/medium.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/large.css" type="text/css" rel="stylesheet"/>
+    <title>Home | Autumn Howard Design</title>
+    <!--This CSS background image only applies to the home page-->
+    <style>
+        body{
+            background: url(images-home/banner-background.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        div.spacer{
+            height: 180px;
+        }
+    </style>
+</head>
 <body>
 <header>
-    <img src="images/profilepic.jpg" width="200" alt="My Profile Picture">
-    <h1>Autumn Howard</h1>
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul  id="primaryNav" class="hide">
+            <li><a href="https://autumndesignswithcolors.wordpress.com/blog/" target="_blank">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="design.html">Design</a></li> 
+            <li><a class="active" href="index.html">Home</a></li>
+        </ul>
+    </nav>
 </header>
-<nav><!--space saver for future main menu--></nav>
 <main>
-    <h2>CIT 230 - Assignment Portal</h2>
-    <ul>
-        <li>Lesson 03: <a href="assignments/lesson-3/fixedhtml.html">HTML Markup Validation Assignment </a></li>
-        <li>Lesson 04: <a href="assignments/lesson-4/franklin-4.html">Franklin Page</a> || <a href="assignments/lesson-4/Website%20Planning%20Document.pdf">Website Planning Document</a></li>
-        <li>Lesson 05: <a href="assignments/lesson-5/franklin-5.html">Franklin City Page</a></li>
-        <li>Lesson 06: <a href="assignments/lesson-6/franklin-6.html">Responsive Design Assignment </a></li>
-        <li>Lesson 07: <a href="assignments/lesson-7/franklin-7.html">CSS Flexbox and Grid </a></li>
-        <li>Lesson 08: <a href="assignments/lesson-8/tablebuild.html">Build a Data Table Assignment</a> || <a href="assignments/lesson-8/stormcenter.html">Storm Center Page</a></li>
-        <li>Lesson 09: <a href="assignments/lesson-9/json-activity/heroes.html">JSON Data Assignment</a> || <a href="assignments/lesson-9/index.html">Home Page with JSON Data</a></li>
-        <li>Lesson 10: <a href="assignments/weather-site/index.html">Finished Weather Site</a></li>
-        <li>Lesson 11: <a href="assignments/lesson-11/index.html">jQuery Tutorials</a></li>
-        <li>Final Website: <a href="assignments/bike-site/index.html">Mountain Spoke</a></li>
-        <li>Practice Website: <a href="sweet-leaf/index.html">Sweet Leaf Tea & Beverage Co</a></li>
+    <div class="spacer"></div>
+    <p id="transparent-box"><span id="greeting">Hi, I'm Autumn!</span><br>Illustration, Branding, UX/UI, Web Design and Development</p>
+    <div class="row"> 
 
-    </ul>
+        <div class="page-pic shadow">
+            <a href="design.html"><img class="responsive" src="images-home/web.jpg" alt="Autumn's work in web design and development"/></a>
+            <p>See some of the websites that I've designed and developed for learning, for clients, and for fun.</p>
+        </div>
+
+
+        <div class="page-pic shadow">
+            <a href="gallery.html"><img  class="responsive" src="images-home/brush.jpg" alt="Illustration and graphic design gallery"/></a>
+            <p>This gallery features some of my illustration work.</p>
+        </div>
+        
+        <div class="page-pic shadow">
+            <a href="branding.html"><img class="responsive" src="images-home/branding.jpg" alt="Gallery for branding work"/></a>
+            <p>This section features logo work, branding packages, and other samples of my content creation process.</p>
+        </div>
+    </div>
+
 </main>
-<footer><p>&copy;2018 Autumn Howard | Utah | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p></footer>
+
+<footer>
+        <p><a href="styleguide/styleguide.html" target="_blank">Style Guide</a> | <a href="styleguide/site-layout-document.psd" download>Photoshop Design File</a><br>
+        All content 2018 &copy; <a id="footer-link" href="index.html">Autumn Howard</a><br> Salt Lake City, UT | <a href="mailto:autumn.howard.designs@gmail.com">autumn.howard.designs@gmail.com</a></p>
+</footer>
+    
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    
 </body>
-</html
+</html>

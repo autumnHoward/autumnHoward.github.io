@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/* --------------------------------------------- */
+/* --------- Branding: Color Palette ----------- */
+/* --------------------------------------------- */
+/* These are the colors of the boxes under the Branding section */
+#swatch1{
+	background-color: #4DC9A7;
+}	
+#swatch2{
+	background-color: #F15F72;
+}	
+#swatch3{
+	background-color: #454545;
+}	
+#swatch4{
+	background-color: #B7B7B7;
+}		
+
+/* ----------------------------------------------------- */
+/* --------- Typography: Heading & Body Copy ----------- */
+/* ----------------------------------------------------- */
+/* These are the font families of all the headings and body copy */
+
+body{
+	font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Permanent Marker", "Oswald", fantasy;
+    letter-spacing: 2px;
+}
+
+
+/* -------------------------------------------------- */
+/* --------- Navigation: Main & Secondary ----------- */
+/* -------------------------------------------------- */
+/* Colors, style, floating, shapes, etc of main & secondary navs */
+
+/* Main Navigation Style */
+#mainnav{
+	
+}
+#mainnav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #454545;
+}
+#mainnav li{
+    float: left;
+}
+#mainnav a:link{
+	display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#mainnav a:visited{
+	color: #B7B7B7;
+	/* other styles */
+}
+#mainnav a:hover{
+    background-color: #F15F72;
+	/* other styles */
+}
+#mainnav a:active{
+	color: #EEA627;
+	/* other styles */
+}
+
+
+/* Secondary Navigation Style */
+
+#secondnav li a:link{
+    text-decoration: none;
+	color: #B7B7B7;
+	/* other styles */
+}
+
+#maisecondnavnnav li a:hover{
+	color: #F15F72;
+	/* other styles */
+}
+#secondnav li a:active{
+	color: #EEA627;
+	/* other styles */
+}
+
+
+/* ----------------------------------- */
+/* --------- HTML Elements ----------- */
+/* ----------------------------------- */
+/* Styling for all HTML Elements */
+
+/* True for all headings */
+h1, h2, h3 ,h4, h5, h6{
+	color: black;
+}
+
+
+/* Style for individual headings */
+h1{
+    font-size: 3.5em;
+    color: #4DC9A7;
+}
+
+h2, h3{
+    color: #4DC9A7;
+}
+
+
+/* List Styles */
+ul{
+
+}
+ul li{
+
+}
+
+ol{
+
+}
+ol li{
+
+}
+
+
+/* Non-Navigational Link Styles */
+/* This is for all default links on your page */
+a:link{
+    color: #F15F72;
+}
+a:visited{
+    color: #135238;
+}
+a:hover{
+    color: #EEA627;
+}
+a:active{
+    color: #DDBF45;
+}
+
+/* This is for secondary link styles (possibly in your footer, etc) */
+.linkstyle2 a:link{
+
+}
+.linkstyle2 a:visited{
+
+}
+.linkstyle2 a:hover{
+
+}
+.linkstyle2 a:active{
+
+}
+
+
+/* Paragraph Styles */
+p{
+	color:;
+	/* Other paragraph styles */
+}
+
+
+/* Figure and Figcaption Styles */
+figure{
+
+}
+figure img{
+    box-shadow: 5px 10px 8px #888888;
+}
+figcaption{
+    font-size: .8em;
+    padding: .8em;
+    color: #454545;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- */
+/* --------- Style Guide CSS ----------- */
+/* ------------------------------------- */
+/* The following CSS is used for the styling of the structure of the Style Guide itself */
+body{
+	width: 700px;
+	margin: 10px auto;
+	border: 1px solid #777;
+	padding: 20px;
+}
+
+.styleguide{
+	font-family: "Open Sans", "Verdana", sans-serif;
+}
+h1.styleguide, h2.styleguide, h3.styleguide, h4.styleguide, h5.styleguide, h6.styleguide{
+	color: #777;
+	font-family: "Permanent Marker", "Oswald", fantasy;
+    letter-spacing: 2px;
+}
+h2.styleguide{
+    background-color: #777;
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: -15px;
+    color: white;
+}
+p.styleguide{
+	color: #777;
+	font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+section{
+    margin-top: -10px;
+    margin-bottom: 70px; 
+}
+.colorgroup{
+    float: left;
+    width: 170px;
+}
+.colorgroup h4{
+	font-size: .9em;
+}
+.colorgroup p{
+    font-size: .8em;
+}
+.clear{
+    clear: both;
+}
+.swatches{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
