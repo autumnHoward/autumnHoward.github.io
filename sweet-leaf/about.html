@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!-- favicon image (shows on tab)-->
+    <link rel="icon" href="images/favicon.png">
+    <!-- multiple stylesheets to control styles using media queries; 
+        handle various screen sizes-->
+    <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/medium.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/large.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet"/>
+    <title>Our Story | Mountain Spoke</title>
+    
+    <!--This CSS background image only applies to the story/about page-->
+    <style>
+        body{
+            background: url(images/caffeine-coffee-cup-641038.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="side-menu-box">
+        <nav>
+            <button class="hide-large" onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a id="no-hover" href="index.html"><img class="nav-logo hide" src="images/leaf-logo.png" alt="Sweet Leaf logo"></a></li>
+                <li class="hide"><h1 class="site-name"><span id="sweet-leaf">Sweet Leaf</span><br><span id="subheading">Tea and Beverage Co.</span></h1></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a class="active" href="about.html">Our Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="side-footer" class="hide"><p>&copy; 2018 <span id="footer-name">Sweet Leaf</span><br>Salt Lake City, UT</p></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+    <h1>The Sweet Leaf Story</h1>
+    <p>Every year, the Mountain Spoke team participates in events and sponsors riders with a passion to experience the American wilderness at its finest.</p>
+    <div id="container">
+    <div class="col">
+        <section class="text">
+            <h2>Sally's Side</h2>
+            <p>Growing up, my father always used to quote C.S.Lewis:</p>
+            <blockquote>“You can never get a cup of tea large enough or a book long enough to suit me.”</blockquote>
+            <p>I suppose I took those words to heart, because tea became a passion of mine (and books of course, but that's for another day!) </p>
+            <p>Joe and I set out to create signature blends that would reflect our vision, and we are proud to share our love of tea with our new home in Salt Lake City.</p>
+        </section>
+    </div>    
+
+    <div class="col"> 
+        <section class="text">
+            <h2>Joe's Side</h2>
+            <p>Sweet Leaf started for me with a cup of tea in a stranger's home in Japan. The artistry and tradition that surrounded a simple cup of tea amazed me, and I was instantly hooked on the authenticity of the experience.</p>
+            <p>Most Americans don't have a huge sense of tradition when it comes to tea ceremonies, but I was determined to introduce some of the flavors and sights home with me. I returned to America after travelling abroad with a notebook filled with notes and ideas for the teas I wanted to blend. That's when I met Sally, and the Sweet Leaf name was born.</p>
+        </section>
+    </div>
+    </div>
+    <img class="responsive" src="images/sally-joe.jpg" alt="Sally and Joe">
+    </main>
+
+    <div class="hide-large">
+        <footer>
+            <p>&copy; 2018 <span id="footer-name">Sweet Leaf</span><br>Salt Lake City, UT</p>
+        </footer>
+    </div>
+    
+    <!-- script for hamburger menu button in mobile views-->
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    
+</body>
+</html>

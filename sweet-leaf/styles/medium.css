@@ -1,0 +1,123 @@
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+@media only screen and (min-width: 37.5em) {
+
+/* hide hamburger button and other elements exclusive to mobile view*/
+    .hide-large { 
+        display: none; 
+    }  
+    
+/*override hide class from smaller menu size*/
+    .hide{
+        display: block;
+    }
+
+    body{
+        display: flex;
+    }
+    
+/*** navigation styles; side nav for larger views and hamburger button for mobile views ****/
+
+    .nav-logo{
+        margin: 0 auto;
+        width: 80px;
+    }
+    
+    h1.site-name{
+        font-size: 1.8em;
+        line-height: 1.3em; 
+    }
+
+/*** ensure nav menu doesn't overlap main page content ****/
+    #side-menu-box{
+        width: 200px;
+    }
+    
+    nav {
+        width: 200px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow-x: hidden;
+        padding-top: 40px;
+    }
+
+    nav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+    
+    nav ul li {
+        background-color: transparent;
+    }
+
+/*** box on home page ****/
+    #ad-box{
+        position: fixed;
+        width: 400px;
+        bottom: 20%;
+        right: 10%;
+    }
+    
+/*** ensure nav menu doesn't overlap main page content ****/
+    main{
+        flex: 1;
+        padding: 0 25px;
+        margin-bottom: 40px;
+    }
+
+/*** layout for tours page ****/
+    .tour-box{
+        display: flex;
+        flex: 1;
+    }
+    
+    .tour-text{
+        max-width: 550px;
+        padding-right: 20px;
+    }
+    
+    .tour-info{
+        padding-top: 20px;
+    }
+    
+    .flex-box{
+        display: flex;
+    } 
+    
+/*** services table ***/
+    .services{
+        width: 400px;
+    }
+    
+/*** video styles ****/
+video{
+    width: 500px;
+}
+    
+/*** 3 column grid layout ***/
+    .grid{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        width: 430px;
+        margin: 0 auto;
+    }
+    
+/*** footer appears at base of side nav in medium/large views ****/
+    #side-footer {
+        font-size: 9pt;
+        position: fixed;
+        bottom: 20px;
+        width: 200px;
+    } 
+
+}

@@ -1,0 +1,356 @@
+/* Default rules; geared toward the small/phone view */
+
+/* Declare the base font-family - from google font api or other */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Shadows+Into+Light');
+
+/* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box;}  
+
+/*** main text styles ****/
+
+body {
+    font-family: "Raleway", "Verdana", "Arial", sans-serif;
+    font-size: 14px;
+}
+
+h1{
+    font-family: "Raleway", "Helvetica", sans-serif;
+    font-size: 4em;
+    letter-spacing: .1em;
+    margin-bottom: .5em;
+    color: #282828;
+}
+
+.site-name{
+    line-height: .8em; 
+    text-align: center;
+    color: #282828;
+    font-family: "Shadows Into Light", "Miniver", "Arial Black", sans-serif;
+    text-shadow: none;
+    letter-spacing: 0;
+}
+
+.hover-text:hover{
+    color: #0e7c42;
+}
+
+#sweet-leaf{
+    font-size: 2em;
+}
+
+#subheading{
+    font-family: "Raleway", "Verdana", "Arial", sans-serif;
+    font-size: .75em;
+}
+
+blockquote{
+    font-family: "Shadows Into Light", "Miniver", "Arial Black", sans-serif;
+    font-size: 1.3em;
+    letter-spacing: .3;
+    color: #b67045;
+    margin: 0 1em;
+}
+
+span.quote-source{
+    font-size: .8em;
+}
+
+figcaption{
+    color: #454545;
+    font-size: .75em;
+}
+
+main ul li{
+    padding: 5px;
+}
+
+section.text{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: .75em;
+    margin: : .75em;
+}
+/*** navigation styles; side nav for larger views and hamburger button for mobile views ****/
+
+nav {
+    text-align: center;
+    background-color: transparent;
+    color: #454545;
+    z-index: 1;
+}
+
+nav button{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    border: none;
+    color: #454545;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.hide {
+    display: none;
+}
+
+nav ul li {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+nav ul li a {
+    display: block;
+    font-size: 1.1em;
+    color: #454545;
+    text-decoration: none;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0,0,0,0.3);
+
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav ul li a:hover {
+    background-color: rgba(182, 112, 69, 0.5);
+    font-size: 1.25em;
+}
+
+#no-hover:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+nav ul li a:active {
+    color: #ffffff;
+}
+
+a.active{
+    background-color: rgba(180, 180, 180, 0.7);
+}
+
+/*** space for main page content ****/
+main{
+    padding: 0 15px;
+    margin: 0 auto 100px;
+}
+
+main p{
+    max-width: 800px;
+}
+
+/*** button and link styles ****/
+.button {
+    background-color: #b67045;
+    border: none;
+    color: #ffffff;
+    padding: .7em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    box-shadow: 4px 4px 10px #454545;
+}
+
+.smaller-button{
+    font-size: 1em;
+}
+
+.button:hover{
+    background-color: #E0A17A;
+    color: #ffffff;
+}
+
+a.email{
+    color: #d8aa91;
+}
+
+a.email:hover{
+    color: #ffffff;
+}
+
+a.email:active{
+    color: #b67045;
+}
+
+main a{
+    color: #0e7c42;
+    text-decoration: none;
+}
+
+main a:hover{
+    color: #b67045;
+}
+
+main a:active{
+    color: #d8aa91;
+}
+
+/*** box on home page ****/
+#ad-box{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 0 auto;
+    width: 350px;
+    box-shadow: 4px 4px 10px #454545;
+}
+
+/*** box on contact page ****/
+#contact-box{
+    text-align: center;
+    color: white;
+    background-color: rgba(14, 124, 66, 0.8);
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 250px; 
+    box-shadow: 4px 4px 10px #454545;
+}
+
+.product-box{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px 15px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px #454545;
+}
+
+/*** responsive images ****/
+figure{
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*** styling for tables ****/
+#contact-info th{
+    padding: 5px 15px 0 0;
+}
+
+#contact-info {
+    font-size: 1.3em;
+    text-align: left;
+}
+
+/*** styling for contact and registration forms ****/
+form{
+    margin:  1em auto;
+    text-align: left;
+}
+
+fieldset{
+    background-color: #d8aa91;
+    margin: 1em auto;
+    border: 3px solid #b67045;
+    max-width: 500px;
+
+}
+
+legend{
+    margin-left: 20px;
+    border: 3px solid #b67045;
+    background-color: #b67045;
+    border-radius: .4em;
+}
+
+.legend-label{
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+}
+
+label{
+/*input elements are inline by default*/
+    display: block;
+    margin: .3em;
+}
+
+/*to put input fields under instructions/labels and improve visual grouping*/
+label span {
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    color: #ffffff;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+#comments-box{
+    height: 150px;
+    width: 100%;
+    padding: .5em;
+}
+
+input.button{
+/*override web kit on some mobile devices*/
+    -webkit-appearance: none;
+    color: #ffffff;
+    width: 40%;
+    display: block;
+    margin: .5em auto;
+}
+
+input.button:hover{
+    background-color: #E0A17A;
+}
+
+input.button:active{
+    background-color: #d8aa91;;
+}
+    
+/*** bottom footer only appears in small/mobile views ****/
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #282828;
+    font-size: 10pt;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+} 
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #d8aa91;
+}
+
+footer a:active{
+    color: #b67045;
+}
+
+#footer-name{
+    font-family: "Shadows Into Light", "Miniver", "Arial Black", sans-serif;
+    font-size: 1.5em;
+}
+
+.footer-link{
+    background-color: transparent;
+    color: #d8aa91;
+    font-size: 1em;
+    border: none;
+    padding-bottom: 0;
+}
+
+.footer-link:hover{
+    font-size: 1em;
+    background-color: transparent;
+    color: #b67045;
+}
+
+.footer-link:active{
+    font-size: 1em;
+    background-color: transparent;
+    color: #ffffff;
+}

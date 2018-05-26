@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!-- favicon image (shows on tab)-->
+    <link rel="icon" href="images/favicon.png">
+    <!-- multiple stylesheets to control styles using media queries; 
+        handle various screen sizes-->
+    <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/medium.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/large.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet"/>
+    <title>Contact | Sweet Leaf</title>
+    
+    <!--This CSS background image only applies to the contact page-->
+    <style>
+        body{
+            background: url(images/bamboo.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>   
+</head>
+<body>
+    <header>
+        <div id="side-menu-box">
+        <nav>
+            <button class="hide-large" onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a id="no-hover" href="index.html"><img class="nav-logo hide" src="images/leaf-logo.png" alt="Sweet Leaf logo"></a></li>
+                <li class="hide"><h1 class="site-name"><span id="sweet-leaf">Sweet Leaf</span><br><span id="subheading">Tea and Beverage Co.</span></h1></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li id="side-footer" class="hide"><p>&copy; 2018 <span id="footer-name">Sweet Leaf</span><br>Salt Lake City, UT</p></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        
+        <section><div id="contact-box">
+            <table id="contact-info">
+                <tr>
+                    <th><img src="images/icon-phone.png"th>
+                    <td>(801) 555-9999</td>
+                </tr> 
+                <tr>
+                    <th><img src="images/icon-email.png"th>
+                    <td><a class="email" href="mailto:hello@sweetleaf.com">hello@sweetleaf.com</a></td>
+                </tr>
+                    <tr>
+                    <th><img src="images/icon-pin.png"></th>
+                    <td>3950 Valley Commons Drive<br>Salt Lake City, Utah 84718</td>
+                  </tr> 
+                  <tr>
+                    <th><img src="images/icon-clock.png"></th>
+                    <td>Monday - Friday 10am - 7pm</td>
+                  </tr> 
+            </table>
+        </div></section>
+
+        <section id="contact-form">
+            <form action="" method="post" encrypt="multipart/form-data" name="contactInfo" id="registration-form">
+                <fieldset>
+                    <legend><span class="legend-label">Contact Information</span></legend>
+                    <label><span>*Full Name:</span><input name="fullname" size="35" type="text" value="" placeholder="Sally Tea" pattern="[a-zA-Z -._]{5,99}" required></label>
+                    <label><span>*Email:</span><input name="email" size="35" type="email" value="" placeholder="sally@example.com"></label>
+                    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="8015551234" pattern="[0-9]{10,20}"></label>
+                </fieldset>
+
+                <fieldset id="comments">
+                    <legend id="add-comments"><span class="legend-label">Comments</span></legend>
+                    <label><textarea id="comments-box" name="comment" placeholder="Questions or Comments? ..."></textarea></label>
+                </fieldset>
+
+                <div id="button-box">
+                <input type="hidden" name="redirect" value="thanks.html">
+                <input type="submit" value="Submit" class="button" onclick="window.location='thanks.html'">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <div class="hide-large">
+        <footer>
+            <p>&copy; 2018 <span id="footer-name">Sweet Leaf</span><br>Salt Lake City, UT</p>
+        </footer>
+    </div>
+    
+    <!-- script for hamburger menu button in mobile views-->
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    
+</body>
+</html>

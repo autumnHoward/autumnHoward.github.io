@@ -1,0 +1,79 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    
+    h1.site-name{
+        font-size: 2em;
+        line-height: .8em; 
+    }
+
+/*** navigation styles; side nav for larger views and hamburger button for mobile views ****/
+    
+    nav {
+        width: 300px;
+    }
+    
+/*** ensure nav menu doesn't overlap main page content ****/
+    #side-menu-box{
+        width: 300px;
+    }
+    
+/*** two column layout on larger screens ****/
+    #container{
+        display: flex;
+        flex: 1;
+    }
+    
+    .col{
+        padding: 0 1.5em;
+        margin: 0;
+        width: 100%;
+    }
+    
+    form{
+        margin: 1em 0;
+    }
+    
+/*** video styles ****/
+    video{
+        width: 800px;
+    }
+    
+/*** 3 column grid layout for sales page ***/
+
+    .grid{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-column-gap: 15px;
+        width: 930px;
+        margin: 0 auto;
+    }
+   
+/*** footer appears at base of side nav in medium/large views ****/
+    #side-footer {
+        font-size: 10pt;
+        width: 300px;
+    } 
+    
+/*
+    .grid{
+    grid-template-columns: 300px 300px 300px;
+	width: 930px;
+    }
+    
+        #row-one{
+        display: flex;
+    }
+    .story-column{
+        flex: 1;
+        padding: .5em;
+    }
+    
+   #row-two{
+        display: flex;
+    }
+*/
+  
+}
+
+

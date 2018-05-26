@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!-- favicon image (shows on tab)-->
+    <link rel="icon" href="images/favicon.png">
+    <!-- multiple stylesheets to control styles using media queries; 
+        handle various screen sizes-->
+    <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/medium.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/large.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet"/>
+    <title>Home | Sweet Leaf</title>
+    
+    <!--This CSS background image only applies to the home page-->
+    <style>
+        body{
+            background: url(images/apricot-background.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="side-menu-box">
+        <nav>
+            <button class="hide-large" onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a id="no-hover" href="index.html"><img class="nav-logo hide" src="images/leaf-logo.png" alt="Sweet Leaf logo"></a></li>
+                <li class="hide"><h1 class="site-name"><span id="sweet-leaf" class="hover-text">Sweet Leaf</span><br><span id="subheading">Tea and Beverage Co.</span></h1></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="side-footer" class="hide"><p>&copy; 2018 <span id="footer-name">Sweet Leaf</span><br>Salt Lake City, UT</p></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="site-name hide-large"><span id="sweet-leaf">Sweet Leaf</span><br><span id="subheading">Tea and Beverage Co.</span></h1>
+        <div id="ad-box">
+            <p>Be the first to enjoy one of our</p>
+            <h1 class="site-name hover-text">Signature Fresh Brews</h1>
+            <a href="products.html" class="button">Browse Tea Collection</a>
+        </div>
+    </main>
+
+    <div class="hide-large">
+        <footer>
+            <p>&copy; 2018 <span id="footer-name">Sweet Leaf</span><br>Salt Lake City, UT</p>
+        </footer>
+    </div>
+    
+    <!-- script for hamburger menu button in mobile views-->
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    
+</body>
+</html>

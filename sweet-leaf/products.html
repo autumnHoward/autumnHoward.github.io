@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!-- favicon image (shows on tab)-->
+    <link rel="icon" href="images/favicon.png">
+    <!-- multiple stylesheets to control styles using media queries; 
+        handle various screen sizes-->
+    <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/medium.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/large.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet"/>
+    <title>Products | Sweet Leaf</title>
+    
+    <!--This CSS background image only applies to the contact page-->
+    <style>
+        body{
+            background: url(images/breakfast-ceramic-cup-close-up-983493.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <div id="side-menu-box">
+        <nav>
+            <button class="hide-large" onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a id="no-hover" href="index.html"><img class="nav-logo hide" src="images/leaf-logo.png" alt="Sweet Leaf logo"></a></li>
+                <li class="hide"><h1 class="site-name"><span id="sweet-leaf">Sweet Leaf</span><br><span id="subheading">Tea and Beverage Co.</span></h1></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="side-footer" class="hide"><p>&copy; 2018 <span id="footer-name">Sweet Leaf</span><br>Salt Lake City, UT</p></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+    <h1>Fill Your Cup</h1>
+    <p>A cup of tea can be the perfect way to relax and rejuvenate by yourself, curled up in your favorite corner at home. Or, you can make it an excuse for a social gathering, and springboard entire conversations off of the aromatic flavors that you share with friends. However you drink it, Sweet Leaf Tea was created with you in mind.</p>
+    <div id="container">
+        <div class="col">
+            <section class="product-box">
+                <h2>Traditional Green Blend</h2>
+                <img class="responsive" src="images/green.jpg" alt="Green tea blend">
+                <p>We went straight to the source to bring you this signature blend. Inspired by a Chinese recipe, this tea will soothe your soul with its fragrant, fresh earthiness.</p>
+                <p>Contains: Green tea, citron, cherry blossoms, ginger</p>
+                <h3>$12 for a 15 bag tin</h3>
+                <a href="products.html" class="button smaller-button">Add to cart</a>
+            </section>
+            
+            <section class="product-box">
+                <h2>Bright Breakfast Brew</h2>
+                <img class="responsive" src="images/breakfast.jpg" alt="Bright Breakfast Brew teablend">
+                <p>Start your day right the English way. This blend begins with a black tea base introduced to warm, fresh flavors that will invigorate your senses.</p>
+                <p>Contains: Black tea, lemon, blueberry, cinnamon, spices</p>
+                <h3>$12 for a 15 bag tin</h3>
+                <a href="products.html" class="button smaller-button">Add to cart</a>
+            </section>
+            
+            <section class="product-box">
+                <h2>Indian Spice</h2>
+                <img class="responsive" src="images/persian.jpg" alt="Persian Spice teablend">
+                <p>Travel the Asian continent without leavinng your seat with this warming brew. A secret blend of spices give this chai-like tea its signature warm and luxurious flavor.</p>
+                <p>Contains: Assam tea, cardamom, spices</p>
+                <h3>$12 for a 15 bag tin</h3>
+                <a href="products.html" class="button smaller-button">Add to cart</a>
+            </section>
+        </div>
+        
+        <div class="col">
+            <section class="product-box">
+                <h2>Fresh Start Blend</h2>
+                <img class="responsive" src="images/fresh.jpg" alt="Fresh Start teablend">
+                <p>Inspired by spiringtime, this floral blend is perfect for your next tea party. It's fresh, springy flavor will make you think of April showers and sweet berries.</p>
+                <p>Contains: White tea, strawberry, goji berry, rose petals, orange, lemon</p>
+                <h3>$12 for a 15 bag tin</h3>
+                <a href="products.html" class="button smaller-button">Add to cart</a>
+            </section>
+            
+            <section class="product-box">
+                <h2>Harvest Blend</h2>
+                <img class="responsive" src="images/apple.jpg" alt="Harvest teablend">
+                <p>Embrace Autumn with this warm, cidery brew. This seasonal blend will warm you from the inside out. The perfect accompaniment for pumpkin picking.</p>
+                <p>Contains: Black tea, apple, pumpkin, cinnamon, nutmeg, spices</p>
+                <h3>$12 for a 15 bag tin</h3>
+                <a href="products.html" class="button smaller-button">Add to cart</a>
+            </section>
+            
+            <section class="product-box">
+                <h2>Lavender Relaxation</h2>
+                <img class="responsive" src="images/lavender.jpg" alt="Lavender Relaxation teablend">
+                <p>This herbal blend has calming properties and a light, fresh flavor. Cosy up with your favorite book and feel your cares melt away while you enjoy this soothing blend.</p>
+                <p>Contains: Lavender, chamomile, lemon, ginger</p>
+                <h3>$12 for a 15 bag tin</h3>
+                <a href="products.html" class="button smaller-button">Add to cart</a>
+            </section>
+        </div>
+    </div>
+    </main>
+
+    <div class="hide-large">
+        <footer>
+            <p>&copy; 2018 <span id="footer-name">Sweet Leaf</span><br>Salt Lake City, UT</p>
+        </footer>
+    </div>
+    
+    <!-- script for hamburger menu button in mobile views-->
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    
+</body>
+</html>
